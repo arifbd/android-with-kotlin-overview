@@ -9,7 +9,7 @@ import com.google.gson.Gson
 import javax.inject.Inject
 
 class LocalJsonParser @Inject constructor(private val context: Context) {
-    suspend fun getContacts(): LiveData<ContactList> {
+    fun getContacts(): LiveData<ContactList> {
         val contactList = Gson().fromJson(getJsonString(context, "contacts.json"), ContactList::class.java)
         val converted: MutableLiveData<ContactList> = MutableLiveData()
         converted.value = contactList
