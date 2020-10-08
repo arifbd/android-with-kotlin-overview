@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KotlinOverview</string>
+    <string name="hint_email_address">Please enter your email address here</string>
+    <string name="bl_login">Login</string>
 </resources>
